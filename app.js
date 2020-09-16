@@ -326,43 +326,69 @@ const thomsCloset = [
 
 // 8)
 
-for (let i = 0; i < kristynsCloset.length; i++) {
-        console.log("WHIRR: Now washing " + kristynsCloset[i]);
-}
+// for (let i = 0; i < kristynsCloset.length; i++) {
+//         console.log("WHIRR: Now washing " + kristynsCloset[i]);
+// }
 
-// ### Inventory
-// 2. Thom wants to do inventory on his closet. Using **bracket notation**, log the **arrays** 
-// (not the elements in the arrays) containing all of Thom's shirts, pants, and accessories.
+// // ### Inventory
+// // 2. Thom wants to do inventory on his closet. Using **bracket notation**, log the **arrays** 
+// // (not the elements in the arrays) containing all of Thom's shirts, pants, and accessories.
 
-console.log(thomsCloset[0]);
-console.log(thomsCloset[1]);
-console.log(thomsCloset[2]);
+// console.log(thomsCloset[0]);
+// console.log(thomsCloset[1]);
+// console.log(thomsCloset[2]);
 
-<hr>
+/* <hr>
 &#x1F534; The commit message should read: <br>
 "Commit 8 - I loops through their closets".
-<hr>
+<hr> */
 
-{/* ## Multiples of 3 and 5
+//9.
+// ## Multiples of 3 and 5
 
-_Yes, you might have tackled this earlier, but try it again (don't look back at your other code :eyes:)_
+// _Yes, you might have tackled this earlier, but try it again (don't look back at your other code :eyes:)_
 
-If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.
+// If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. 
+// The sum of these multiples is 23.
 
-Find the **sum** of all the multiples of 3 or 5 below 1000.
+// Find the **sum** of all the multiples of 3 or 5 below 1000.
 
-:clap: You just solved [Project Euler](https://projecteuler.net/problem=1) problem 1! :clap:
+// 9)
 
->Tip: Get used to thinking about how to solve problems _now_. Will help immensely with coding challenges, and get your coding brain muscles nice and flexed for the class. Make a habit of going to Project Euler and taking a crack at the problems
+for (let i = 0; i <= 1000; i++) {
+  if ([i] % 3 === 0 && [i] % 5 === 0){
+      console.log([i] + "This is a multiple of '3 and 5'.");
+  }else if ([i] % 3 === 0) {
+      console.log([i] + "This is a multiple of '3'.");
+  }else if ([i] % 5 === 0) {
+    console.log([i] + "This is a multiple of '5'.");
+  }else{
+    console.log([i]);
+  }
+}
 
-<hr>
-&#x1F534; The commit message should read: <br>
-"Commit 9 - Project Euler Problem 1 answered"
-<hr>
+function sumMulti() {
+  let sum = 0;
+  for (let i = 0; i <= 1000; i++) {
+    if ([i] % 3 === 0 || [i] % 5 === 0) {
+      sum += i;
+    }
+}
+return sum;
+}
+console.log(sumMulti());
+// :clap: You just solved [Project Euler](https://projecteuler.net/problem=1) problem 1! :clap:
 
----
+// >Tip: Get used to thinking about how to solve problems _now_. Will help immensely with coding challenges, and get your coding brain muscles nice and flexed for the class. Make a habit of going to Project Euler and taking a crack at the problems
 
+// <hr>
+// &#x1F534; The commit message should read: <br>
+// "Commit 9 - Project Euler Problem 1 answered"
+// <hr>
 
+// ---
+
+{/* 
 # Hungry for more?
 
 ## Triangles
@@ -452,5 +478,7 @@ Expected output:
 &#x1F534; The commit message should read: <br>
 "Commit 11 - Find the Median answered"
 <hr>
-
  */}
+
+
+
