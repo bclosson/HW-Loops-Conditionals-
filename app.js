@@ -33,7 +33,14 @@
 // ## Excited Kitten
 // 1. Write code that logs "Love me, pet me! HSSSSSS!" 20 times.
 
-// 2. For every **even** number in your loop, log "...human...why you taking pictures of me?...", "...the catnip made me do it...", 
+// 1)
+
+// for (let i = 0; i < 20; i++) {
+//   console.log("Love me, pet me! HSSSSSS!");
+// }
+
+// 2. For every **even** number in your loop, log "...human...why you taking pictures of me?...", 
+// "...the catnip made me do it...", 
 // or "...why does the red dot always get away..." at random.
 
 // >Hint: You will need to use Math.random()
@@ -44,15 +51,11 @@
 // '...the catnip made me do it...', 
 // '...why does the red dot always get away...'];
 
-// const ranPhrase = catPhrase[Math.floor(Math.random() * catPhrase.length)];
-
-// const catSpeak = 'Love me, pet me! HSSSSSS!';
-
-// for (let i = 1; i <= 20; i++) {
+// for (let i = 0; i < 20; i++) {
 //      if (i % 2 === 0) {
-//         console.log(ranPhrase)
+//         console.log(catPhrase[Math.floor(Math.random() * catPhrase.length)]);
 //     } else {
-//          console.log(catSpeak);
+//          console.log([i]);
 //      }
 // }
 
@@ -159,7 +162,7 @@
 
 // // 1)
 
-const ninTurts = ['Donatello', 'Leonardo', 'Raphael', 'Michaelangelo'];
+// const ninTurts = ['Donatello', 'Leonardo', 'Raphael', 'Michaelangelo'];
 
 
 
@@ -176,16 +179,157 @@ const ninTurts = ['Donatello', 'Leonardo', 'Raphael', 'Michaelangelo'];
 
 // 3) 
 
-for (let i = 0; i < ninTurts.length; i++) {
-    // console.log(ninTurts[i].toUpperCase());
-    ninTurts[i] = ninTurts[i].split('');
-    for (let t = 0; t < ninTurts[i].length; t += 2) {
-    // console.log(ninTurts[i][t].toUpperCase());
-        ninTurts[i][t] = ninTurts[i][t].toUpperCase();
-    }
-    ninTurts[i] = ninTurts[i].join('');
-    console.log(ninTurts[i]);
-}
+// for (let i = 0; i < ninTurts.length; i++) {
+//     // console.log(ninTurts[i].toUpperCase());
+//     ninTurts[i] = ninTurts[i].split('');
+//     for (let t = 0; t < ninTurts[i].length; t += 2) {
+//     // console.log(ninTurts[i][t].toUpperCase());
+//         ninTurts[i][t] = ninTurts[i][t].toUpperCase();
+//     }
+//     ninTurts[i] = ninTurts[i].join('');
+//     console.log(ninTurts[i]);
+// }
 // <hr>
 // &#x1F534; The commit message should read: <br>
 // "Commit 6 - Yell at the Ninja Turtles answered"
+
+
+// 7.
+//## Return of the Closets
+
+// Below, we've given you examples of Kristyn and Thom's closets 
+//modeled as data in JavaScript. Use this data to answer the following 
+//questions.
+
+// ```javascript
+const kristynsCloset = [
+  "left shoe",
+  "cowboy boots",
+  "right sock",
+  "GA hoodie",
+  "green pants",
+  "yellow knit hat",
+  "marshmallow peeps"
+];
+
+// // Thom's closet is more complicated. Check out this nested data 
+//structure!!
+const thomsCloset = [
+  [
+    // These are Thom's shirts
+    "grey button-up",
+    "dark grey button-up",
+    "light blue button-up",
+    "blue button-up",
+  ],[
+    // These are Thom's pants
+    "grey jeans",
+    "jeans",
+    "PJs"
+  ],[
+    // Thom's accessories
+    "wool mittens",
+    "wool scarf",
+    "raybans"
+  ]
+];
+// // ```
+
+// // ### Alien Attire
+// // 1. Kristyn's left shoe has traveled through time and space and 
+// //turned up in Thom's accessories drawer! Remove Kristyn's shoe from 
+// //the array and save it to the variable `kristynsShoe`. 
+// //Use that variable to add Kristyn's lost shoe to Thom's accessories 
+// //array.
+
+// // 1)
+
+// // const kristynsShoe = kristynsCloset.shift();
+// // //console.log(kristynsCloset);
+
+// // thomsCloset[2].unshift(kristynsShoe);
+// // console.log(thomsCloset);
+
+// // ### Dress 'em Up
+// // 1. Modify your code to put together **3 separate outfits** for 
+// //Kristyn and Thom. Put the output in a sentence to tell us what 
+// //we'll be wearing. Mix and match!
+
+// // 1)
+ let outfit1 = [];
+  for (let i = 0; i < kristynsCloset.length; i++) {
+      if (kristynsCloset[i] === kristynsCloset[1] || kristynsCloset[i] === kristynsCloset[3] 
+        || kristynsCloset[i] === kristynsCloset[4]) {
+        outfit1.push(kristynsCloset[i]);
+    } 
+  }
+  console.log("Kristyn's first outfit is,", outfit1.join(), ".");
+
+ let outfit2 = [];
+  for (let i = 0; i < kristynsCloset.length; i++) {
+      if (kristynsCloset[i] === kristynsCloset[0] || kristynsCloset[i] === kristynsCloset[2] 
+        || kristynsCloset[i] === kristynsCloset[5]) {
+        outfit2.push(kristynsCloset[i]);
+    } 
+  }
+  console.log("Kristin's second outfit is,", outfit2.join(), ".");
+ 
+  let outfit3 = [];
+  for (let i = 0; i < kristynsCloset.length; i++) {
+      if (kristynsCloset[i] === kristynsCloset[0] || kristynsCloset[i] === kristynsCloset[1] 
+        || kristynsCloset[i] === kristynsCloset[6]) {
+        outfit3.push(kristynsCloset[i]);
+    } 
+  }
+  console.log("Kristyn's third outfit is,", outfit3.join(),".");
+
+let tCloset = thomsCloset.flat();
+let tOutfit1 = [];
+
+    for (let i = 0; i < tCloset.length; i++) {
+         if (tCloset[i] === tCloset[0] || tCloset[i] === tCloset[4] || tCloset[i] === tCloset[7]){
+           tOutfit1.push(tCloset[i]);
+         }
+    }
+    console.log("Thom's first outfit is,", tOutfit1.join(),".");
+let tCloset1 = thomsCloset.flat();
+let tOutfit2 = [];
+
+    for (let i = 0; i < tCloset1.length; i++) {
+         if (tCloset1[i] === tCloset1[1] || tCloset1[i] === tCloset1[5] || tCloset1[i] === tCloset1[8]){
+           tOutfit2.push(tCloset1[i]);
+         }
+    }
+    console.log("Thom's second outfit is,", tOutfit2.join(),".");
+
+  let tCloset2 = thomsCloset.flat();
+  let tOutfit3 = [];
+
+    for (let i = 0; i < tCloset2.length; i++) {
+         if (tCloset2[i] === tCloset2[3] || tCloset2[i] === tCloset2[6] || tCloset2[i] === tCloset2[9]){
+           tOutfit3.push(tCloset2[i]);
+         }
+    }
+    console.log("Thom's third outfit is,", tOutfit3.join(),".");
+
+// // <hr>
+// // &#x1F534; The commit message should read: <br>
+// // "Commit 7 - Kristyn and Thom have their outfits ready for class 
+// //- array practice"
+
+// // 8.
+
+// // ## Dirty Laundry
+// // Continue looking at the closet arrays:
+// // 1. Time to do laundry - loop through Kristyn's closet and log the sentence "WHIRR: Now washing (item)"
+// // for each item in the array.
+
+// // 8)
+
+// // for (let i = 0; i < kristynsCloset.length; i++) {
+// //         console.log("WHIRR: Now washing " + kristynsCloset[i]);
+// // }
+
+// // ### Inventory
+// // 2. Thom wants to do inventory on his closet. Using **bracket notation**, log the **arrays** 
+// // (not the elements in the arrays) containing all of Thom's shirts, pants, and accessories.
