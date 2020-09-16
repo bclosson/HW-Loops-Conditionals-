@@ -256,80 +256,201 @@ const thomsCloset = [
 // //we'll be wearing. Mix and match!
 
 // // 1)
- let outfit1 = [];
-  for (let i = 0; i < kristynsCloset.length; i++) {
-      if (kristynsCloset[i] === kristynsCloset[1] || kristynsCloset[i] === kristynsCloset[3] 
-        || kristynsCloset[i] === kristynsCloset[4]) {
-        outfit1.push(kristynsCloset[i]);
-    } 
-  }
-  console.log("Kristyn's first outfit is,", outfit1.join(), ".");
+//  let outfit1 = [];
+//   for (let i = 0; i < kristynsCloset.length; i++) {
+//       if (kristynsCloset[i] === kristynsCloset[1] || kristynsCloset[i] === kristynsCloset[3] 
+//         || kristynsCloset[i] === kristynsCloset[4]) {
+//         outfit1.push(kristynsCloset[i]);
+//     } 
+//   }
+//   console.log("Kristyn's first outfit is,", outfit1.join(), ".");
 
- let outfit2 = [];
-  for (let i = 0; i < kristynsCloset.length; i++) {
-      if (kristynsCloset[i] === kristynsCloset[0] || kristynsCloset[i] === kristynsCloset[2] 
-        || kristynsCloset[i] === kristynsCloset[5]) {
-        outfit2.push(kristynsCloset[i]);
-    } 
-  }
-  console.log("Kristin's second outfit is,", outfit2.join(), ".");
+//  let outfit2 = [];
+//   for (let i = 0; i < kristynsCloset.length; i++) {
+//       if (kristynsCloset[i] === kristynsCloset[0] || kristynsCloset[i] === kristynsCloset[2] 
+//         || kristynsCloset[i] === kristynsCloset[5]) {
+//         outfit2.push(kristynsCloset[i]);
+//     } 
+//   }
+//   console.log("Kristin's second outfit is,", outfit2.join(), ".");
  
-  let outfit3 = [];
-  for (let i = 0; i < kristynsCloset.length; i++) {
-      if (kristynsCloset[i] === kristynsCloset[0] || kristynsCloset[i] === kristynsCloset[1] 
-        || kristynsCloset[i] === kristynsCloset[6]) {
-        outfit3.push(kristynsCloset[i]);
-    } 
-  }
-  console.log("Kristyn's third outfit is,", outfit3.join(),".");
+//   let outfit3 = [];
+//   for (let i = 0; i < kristynsCloset.length; i++) {
+//       if (kristynsCloset[i] === kristynsCloset[0] || kristynsCloset[i] === kristynsCloset[1] 
+//         || kristynsCloset[i] === kristynsCloset[6]) {
+//         outfit3.push(kristynsCloset[i]);
+//     } 
+//   }
+//   console.log("Kristyn's third outfit is,", outfit3.join(),".");
 
-let tCloset = thomsCloset.flat();
-let tOutfit1 = [];
+// let tCloset = thomsCloset.flat();
+// let tOutfit1 = [];
 
-    for (let i = 0; i < tCloset.length; i++) {
-         if (tCloset[i] === tCloset[0] || tCloset[i] === tCloset[4] || tCloset[i] === tCloset[7]){
-           tOutfit1.push(tCloset[i]);
-         }
-    }
-    console.log("Thom's first outfit is,", tOutfit1.join(),".");
-let tCloset1 = thomsCloset.flat();
-let tOutfit2 = [];
+//     for (let i = 0; i < tCloset.length; i++) {
+//          if (tCloset[i] === tCloset[0] || tCloset[i] === tCloset[4] || tCloset[i] === tCloset[7]){
+//            tOutfit1.push(tCloset[i]);
+//          }
+//     }
+//     console.log("Thom's first outfit is,", tOutfit1.join(),".");
+// let tCloset1 = thomsCloset.flat();
+// let tOutfit2 = [];
 
-    for (let i = 0; i < tCloset1.length; i++) {
-         if (tCloset1[i] === tCloset1[1] || tCloset1[i] === tCloset1[5] || tCloset1[i] === tCloset1[8]){
-           tOutfit2.push(tCloset1[i]);
-         }
-    }
-    console.log("Thom's second outfit is,", tOutfit2.join(),".");
+//     for (let i = 0; i < tCloset1.length; i++) {
+//          if (tCloset1[i] === tCloset1[1] || tCloset1[i] === tCloset1[5] || tCloset1[i] === tCloset1[8]){
+//            tOutfit2.push(tCloset1[i]);
+//          }
+//     }
+//     console.log("Thom's second outfit is,", tOutfit2.join(),".");
 
-  let tCloset2 = thomsCloset.flat();
-  let tOutfit3 = [];
+//   let tCloset2 = thomsCloset.flat();
+//   let tOutfit3 = [];
 
-    for (let i = 0; i < tCloset2.length; i++) {
-         if (tCloset2[i] === tCloset2[3] || tCloset2[i] === tCloset2[6] || tCloset2[i] === tCloset2[9]){
-           tOutfit3.push(tCloset2[i]);
-         }
-    }
-    console.log("Thom's third outfit is,", tOutfit3.join(),".");
+//     for (let i = 0; i < tCloset2.length; i++) {
+//          if (tCloset2[i] === tCloset2[3] || tCloset2[i] === tCloset2[6] || tCloset2[i] === tCloset2[9]){
+//            tOutfit3.push(tCloset2[i]);
+//          }
+//     }
+//     console.log("Thom's third outfit is,", tOutfit3.join(),".");
 
 // // <hr>
 // // &#x1F534; The commit message should read: <br>
 // // "Commit 7 - Kristyn and Thom have their outfits ready for class 
 // //- array practice"
 
-// // 8.
+// 8.
 
-// // ## Dirty Laundry
-// // Continue looking at the closet arrays:
-// // 1. Time to do laundry - loop through Kristyn's closet and log the sentence "WHIRR: Now washing (item)"
-// // for each item in the array.
+// ## Dirty Laundry
+// Continue looking at the closet arrays:
+// 1. Time to do laundry - loop through Kristyn's closet and log the sentence "WHIRR: Now washing (item)"
+// for each item in the array.
 
-// // 8)
+// 8)
 
-// // for (let i = 0; i < kristynsCloset.length; i++) {
-// //         console.log("WHIRR: Now washing " + kristynsCloset[i]);
-// // }
+for (let i = 0; i < kristynsCloset.length; i++) {
+        console.log("WHIRR: Now washing " + kristynsCloset[i]);
+}
 
-// // ### Inventory
-// // 2. Thom wants to do inventory on his closet. Using **bracket notation**, log the **arrays** 
-// // (not the elements in the arrays) containing all of Thom's shirts, pants, and accessories.
+// ### Inventory
+// 2. Thom wants to do inventory on his closet. Using **bracket notation**, log the **arrays** 
+// (not the elements in the arrays) containing all of Thom's shirts, pants, and accessories.
+
+console.log(thomsCloset[0]);
+console.log(thomsCloset[1]);
+console.log(thomsCloset[2]);
+
+<hr>
+&#x1F534; The commit message should read: <br>
+"Commit 8 - I loops through their closets".
+<hr>
+
+{/* ## Multiples of 3 and 5
+
+_Yes, you might have tackled this earlier, but try it again (don't look back at your other code :eyes:)_
+
+If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.
+
+Find the **sum** of all the multiples of 3 or 5 below 1000.
+
+:clap: You just solved [Project Euler](https://projecteuler.net/problem=1) problem 1! :clap:
+
+>Tip: Get used to thinking about how to solve problems _now_. Will help immensely with coding challenges, and get your coding brain muscles nice and flexed for the class. Make a habit of going to Project Euler and taking a crack at the problems
+
+<hr>
+&#x1F534; The commit message should read: <br>
+"Commit 9 - Project Euler Problem 1 answered"
+<hr>
+
+---
+
+
+# Hungry for more?
+
+## Triangles
+
+0. declare a variable `argument` and set it equal to 7.
+
+1. Write a loop that console logs a "left isosceles" triangle (SEE BELOW) made of '#' that has the height and length of `argument`.
+
+>Ex: `argument` is 7
+
+```
+#
+##
+###
+####
+#####
+######
+#######
+```
+
+2. Write a loop that console logs a "right isosceles" triangle (SEE BELOW) made of '#' that has the height and length of `argument`.  This is deceptively tricky. 
+
+>Ex: `argument` is 7
+
+```
+      #
+     ##
+    ###
+   ####
+  #####
+ ######
+#######
+```
+
+
+3. Write a loop that console logs an "upside down left" isosceles triangle made of '#' that has the height and length of the argument.
+
+>Ex: `argument` is 7
+
+```
+#######
+######
+#####
+####
+###
+##
+#
+```
+
+4. Write a loop that console logs an "upside down right" isosceles triangle made of '#' that has the height and length of the argument.  This is also tricky.
+
+>Ex: `argument` is 7
+
+```
+#######
+ ######
+  #####
+   ####
+    ###
+     ##
+      #
+```
+
+5. Change the value of `argument` and reload your code and marvel at how you just solved a challenging problem and feel proud of yourself.
+
+<hr>
+&#x1F534; The commit message should read: <br>
+"Commit 10 - Triangles answered"
+<hr>
+
+## Find the Median
+- Find the median number in the following `nums` array, then console.log that number.
+- _hint_ this will likely involve breaking down the problem into a few steps
+-  _hint_: Click "Details" below (don't read this unless you've been stuck for a while) 
+<details>
+if you check the length of the array / 2, you might get not get a whole number. In which case, look into `Math.floor( // something )`
+</details>
+
+```javascript
+const nums = [14, 11, 16, 15, 13, 16, 15, 17, 19, 11, 12, 14, 19, 11, 15, 17, 11, 18,12, 17, 12, 71, 18, 15, 12];
+
+Expected output:
+=> 15
+```
+
+<hr>
+&#x1F534; The commit message should read: <br>
+"Commit 11 - Find the Median answered"
+<hr>
+
+ */}
